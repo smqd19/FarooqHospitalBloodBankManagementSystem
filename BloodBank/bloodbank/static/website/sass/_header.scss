@@ -1,0 +1,78 @@
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../img/austin-distel-EMPZ7yRZoGw-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media only screen and (max-width: $bp-tiniest) {
+    height: 70vh;
+  }
+
+  .heading-1 {
+    font-size: 6rem;
+    font-family: inherit;
+    color: white;
+    text-align: center;
+    padding-top: 10rem;
+    animation: bounce;
+    animation-duration: 1s;
+
+    @media only screen and (max-width: $bp-big) {
+      font-size: 5rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 3.5rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      font-size: 2.5rem;
+    }
+
+    @media only screen and (max-width: $bp-tiniest) {
+      font-size: 1.9rem;
+    }
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+
+    &-left {
+      font-size: 2.5rem;
+      color: white;
+      background-color: var(--color-blue);
+      text-decoration: none;
+      border: 0.2rem solid var(--color-blue);
+      margin-right: 5rem;
+      padding: 0.5rem 1rem;
+      margin-top: 8rem;
+      margin-bottom: 2rem;
+
+      @media only screen and (max-width: $bp-smallest) {
+        font-size: 1.8rem;
+      }
+    }
+
+    &-right {
+      font-size: 2.5rem;
+      color: white;
+      text-decoration: none;
+      border: 0.2rem solid white;
+      padding: 0.5rem 1rem;
+      margin-top: 8rem;
+      margin-bottom: 2rem;
+
+      @media only screen and (max-width: $bp-smallest) {
+        font-size: 1.8rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,71 @@
+.services {
+    background-color: var(--color-cadetblue);
+    //height: 55vh;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    @media only screen and (max-width: $bp-smaller) {
+        flex-direction: column;
+    }
+
+    h1 {
+        flex: 0 0 100%;
+        padding: 5rem 2rem 2rem 2rem;
+        text-align: center;
+        font-size: 4rem;
+
+        @media only screen and (max-width: $bp-big) {
+            font-size: 3rem;
+        }
+    }
+
+    &__part {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 0 0 33%;
+        padding: 0 3rem;
+        transition: all 1s;
+
+        img {
+            width: 4.5rem;
+            height: 4.5rem;
+            margin-bottom: 4rem;
+        }
+
+        img:hover {
+            transform: scale(1.2);
+        }
+
+        h3 {
+            font-size: 2.5rem;
+            margin-top: -2rem;
+            margin-bottom: 3rem;
+
+            @media only screen and (max-width: $bp-big) {
+                font-size: 1.8rem;
+            }
+
+            @media only screen and (max-width: $bp-small) {
+                font-size: 1.4rem;
+            }
+        }
+
+        p {
+            font-size: 1.5rem;
+            font-family: "Open Sans";
+            margin-bottom: 4rem;
+
+            -moz-hyphens: auto;
+            -ms-hyphens: auto;
+            -webkit-hyphens: auto;
+            hyphens: auto;
+
+            @media only screen and (max-width: $bp-big) {
+                font-size: 1.3rem;
+            }
+        }
+    }
+}

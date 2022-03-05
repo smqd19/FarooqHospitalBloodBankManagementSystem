@@ -1,0 +1,38 @@
+:root {
+  --color-grey: #d8dbe2;
+  --color-steelblue: #dbe3f8;
+  --color-blue: #004492;
+  --color-charcoal: #373f51;
+  --color-black: #1b1b1e;
+}
+
+// BREAKPOINTS
+$bp-big: 68.75rem; // 1100px
+$bp-medium: 62.5rem; // 1000px
+$bp-small: 53.1rem; // 850px
+$bp-smaller: 45rem; // 720px
+$bp-smallest: 37.5rem; // 600px
+$bp-tiniest: 22.5rem; // 360px
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+}

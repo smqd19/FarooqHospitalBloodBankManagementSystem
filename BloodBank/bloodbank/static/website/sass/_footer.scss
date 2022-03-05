@@ -1,0 +1,42 @@
+.footer {
+    background-color: var(--color-black);
+    padding: 4rem;
+
+    &-item {
+        font-size: 1.3rem;
+        color: white;
+
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+
+        flex-wrap: wrap;
+    }
+
+    ul {
+        list-style: none;
+        margin-left: 2.3rem;
+        margin-bottom: 2rem;
+    }
+
+    span {
+        font-size: 1.7rem;
+        font-weight: bold;
+    }
+
+    .border {
+        margin-top: 6rem;
+        border-bottom: 1px solid rgba($color: #fff, $alpha: 0.8);
+    }
+
+    p {
+        font-size: 1.2rem;
+        color: white;
+        margin: 2rem 0;
+
+        -moz-hyphens: auto;
+        -ms-hyphens: auto;
+        -webkit-hyphens: auto;
+        hyphens: auto;
+    }
+}

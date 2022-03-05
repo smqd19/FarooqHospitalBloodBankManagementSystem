@@ -1,0 +1,98 @@
+.testimonials {
+    //height: 50vh;
+    background-color: var(--color-steelblue);
+    clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0 100%);
+
+    .slideshow-container {
+        position: relative;
+        background: #d5edf8f1;
+    }
+
+    .mySlides {
+        display: none;
+        padding: 8rem;
+        text-align: center;
+        font-size: 2rem;
+        margin-top: 5rem;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin: -3rem 3rem 0 3rem;
+        padding: 1.6rem;
+        color: rgb(26, 6, 139);
+        font-weight: bold;
+        font-size: 2rem;
+        border-radius: 3px 3px 3px 3px;
+        user-select: none;
+    }
+
+    .next {
+        position: absolute;
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(6, 43, 112, 0.8);
+        color: white;
+    }
+
+    .dot-container {
+        text-align: center;
+        padding: 20px;
+        background: rgb(174, 209, 255);
+    }
+
+    .dot {
+        cursor: pointer;
+        height: 1.5rem;
+        width: 1.5rem;
+        margin: 0 0.2rem;
+        background-color: #d5edf8f1;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+        background-color: #004492;
+    }
+
+    q {
+        font-style: italic;
+        margin-bottom: 2rem;
+
+        @media only screen and (max-width: $bp-small) {
+            font-size: 1.5rem;
+        }
+    }
+
+    img {
+        height: 6rem;
+        width: 6rem;
+        border-radius: 100rem;
+
+        @media only screen and (max-width: $bp-small) {
+            height: 5rem;
+            width: 5rem;
+        }
+    }
+
+    .author {
+        color: cornflowerblue;
+
+        @media only screen and (max-width: $bp-small) {
+            font-size: 1.5rem;
+        }
+    }
+}
